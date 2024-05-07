@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    
+    <script src="index.js"></script>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "uo1DDgK_qKatz-Z0P",
+            });
+        })();
+    </script>
+
+    <title>Codefront Web Studios</title>
+</head>
+<body>
+
+    <!-- header section -->
+    <div class="hero" id="home">
+        <nav>
+            <h2 class="logo">Code<span>front</span></h2>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#contact-us">Contact Us</a></li>
+            </ul>
+        </nav>    
+        <div class="content">
+            <h4>Designing the web,</h4>
+            <h3>One pixel at a time!</h3>
+            <div class="newsletter">
+                <form>
+                    <input type="email" name="email" id="email" placeholder="Enter Your Email">
+                    <input type="submit" name="submit" value="Get Started">
+                </form>
+            </div>
+        </div>
+    </div>
+
+ <!-- Services Section-->
+    <div class="service" id="service">
+        <div class="title">
+            <h2>Our Services</h2>
+        </div>
+
+        <div class="box">
+            <div class="card">
+                <i class="fa-solid fa-globe"></i>
+                <h5>Web Design & Development</h5>
+                <div class="desc">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Facilis officiis nostrum fuga modi ad quis voluptates illo a mollitia dolores.</p>
+
+                    <p style="text-align: center;">
+                    <a class="button" href="#">Read More</a>
+                </p>
+                </div>
+            </div>
+       
+
+            <div class="card">
+                <i class="fa-solid fa-sign-hanging"></i>
+                <h5>Branding & Design</h5>
+                <div class="desc">
+                    <p><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Facilis officiis nostrum fuga modi ad quis voluptates illo a mollitia dolores.</p>
+
+                    <p style="text-align: center;">
+                    <a class="button" href="#">Read More</a>
+                </p>
+                </div>
+            </div>
+       
+
+            <div class="card">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <h5>Search Engine Optimisation</h5>
+                <div class="desc">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Facilis officiis nostrum fuga modi ad quis voluptates illo a mollitia dolores.</p>
+
+                    <p style="text-align: center;">
+                    <a class="button" href="#">Read More</a>
+                </p>
+                </div>
+            </div>
+        
+
+            <div class="card">
+                <i class="fa-solid fa-users"></i>
+                <h5>Social Media Advertising</h5>
+                <div class="desc">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Facilis officiis nostrum fuga modi ad quis voluptates illo a mollitia dolores.</p>
+
+                    <p style="text-align: center;">
+                    <a class="button" href="#">Read More</a>
+                </p>
+                </div>
+            </div>
+            
+        </div>
+    </div>  
+    
+    <!--About Us-->
+<div class="about" id="about-us">
+    <div class="main">
+        <img src="/img/coder.jpg" alt="web developer on a laptop">
+        <div class="about-text">
+            <h2>About Us</h2>
+            <p>
+                Welcome to Codefront, a premier web development and design company based in the dynamic city of Pretoria! 
+                Established in 2024 by Kagiso, a self-taught web developer, we bring a fresh perspective and innovative approach to 
+                creating stunning websites and digital solutions. We are passionate about crafting engaging online experiences
+                 that not only look beautiful but also drive results for our clients. Whether you're looking to 
+                 establish your online presence or are in need of a complex web application, Codefront is here to 
+                 turn your vision into reality. Let's build something amazing together!
+            </p>
+            
+            <a href="#contact-us">
+            <button type="button">Get In Touch</button>
+            </a>
+
+        </div>
+    </div>
+</div>
+
+    <!-- Contact Me -->
+<div class="contact-us" id="contact-us">
+    <p>Get in touch with us!</p>
+        <form>
+            <input type="name" name="name" id="name" placeholder="Enter Your Name">
+            <input type="company" name="company" id="company" placeholder="Enter Your Company Name">
+            <input type="e-mail" name="email" id="email" placeholder="Enter Your Email">
+            <input type="phone" name="phone" id="phone" placeholder="Enter Your Phone Number">
+            <input type="submit" onclick="sendMail()" name="submit" id="submit-details" value="Submit">
+        </form>
+</div>
+
+
+<!--Footer-->
+<footer>
+    <p>Codefront</p>
+    <p>Follow us on social media:</p>
+    <div class="social">
+        <a href="https://www.facebook.com/profile.php?id=61558992045726"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/codefront_?igsh=MTNheG45NmpqNHhraA=="><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://wa.me/27696121464"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+    <p class="copyright">Codefront &copy; 2024</p>
+</footer>
+
+</div>
+
+</body>
+</html>
